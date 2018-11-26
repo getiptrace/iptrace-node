@@ -5,8 +5,11 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "build": "babel src --out-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "rimraf dist",
+    "build": "rimraf dist && babel src --out-dir dist",
+    "lint": "eslint src/**",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run lint && npm run build"
   },
   "husky": {
     "hooks": {
@@ -36,6 +39,7 @@
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "prettier": "1.15.2",
+    "rimraf": "^2.6.2",
     "tslint": "^5.11.0"
   },
   "lint-staged": {
