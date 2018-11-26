@@ -1,6 +1,15 @@
 const axios = require("axios");
 const ipRegex = require("ip-regex");
 
+/**
+ * get ip information from clear ip service
+ * 
+ * @param {string} ip 
+ * @param {string} apikey 
+ * 
+ * @returns {Promise} promise results in response object contian ip info 
+ * 
+ */
 const getIpInfo = (ip, apikey) => {
   if (!apikey) return Promise.reject(new Error("api key is required"));
 
