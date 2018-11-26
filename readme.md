@@ -1,17 +1,11 @@
-# JS-Boilerplate
+# clear ip node library
 
-raw javascript boilerplate
+client library for clear ip
 
 ## Installation
 
 ```bash
 yarn install
-```
-
-## Usage
-
-```bash
-yarn run start
 ```
 
 ## Contributing

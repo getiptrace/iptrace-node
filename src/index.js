@@ -1,8 +1,7 @@
-const getIpInfo = require('./ipinfo');
+const getIpInfo = require("./ipinfo");
 
 const main = {
-    getIpInfo
-
-}
+  getIpInfo
+};
 
 module.exports = main;
