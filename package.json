@@ -1,8 +1,9 @@
 {
-  "name": "node-clearip-lib",
+  "name": "clearip",
   "version": "1.0.0",
-  "description": "",
+  "description": "Clearip.io library: Locate your users, enrich their experiences, prevent fraud, ensure compliance, and so much more.",
   "main": "dist/index.js",
+  "homepage":"https://clearip.io",
   "scripts": {
     "start": "node src/index.js",
     "prebuild": "rimraf dist",
