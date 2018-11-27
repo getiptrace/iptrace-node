@@ -10,15 +10,16 @@ yarn add clearip
 
 ## usage
 
+Get ip info:
+
 ```javascript
-const { getIpInfo } = require("clearip");
+const Client = require("./index");
 
 const main = async () => {
-  
-  const response = await getIpInfo("ip address here", "api key here");
+  const clearIpClient = new Client("api key here");
 
+  const response = await clearIpClient.getIpinfo("ip here");
   console.log(response);
-  
 };
 ```
 
