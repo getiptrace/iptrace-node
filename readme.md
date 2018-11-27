@@ -5,7 +5,21 @@ client library for clear ip
 ## Installation
 
 ```bash
-yarn install
+yarn add clearip
+```
+
+## usage
+
+```javascript
+const { getIpInfo } = require("clearip");
+
+const main = async () => {
+  
+  const response = await getIpInfo("ip address here", "api key here");
+
+  console.log(response);
+  
+};
 ```
 
 ## Contributing
