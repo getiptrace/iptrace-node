@@ -13,7 +13,7 @@ yarn add clearip
 Get ip info:
 
 ```javascript
-const Client = require("./index");
+const Client = require("clearip");
 
 const main = async () => {
   const clearIpClient = new Client("api key here");
