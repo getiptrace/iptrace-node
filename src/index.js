@@ -1,7 +1,7 @@
-const axios = require("axios");
-const GetIpInfoFun = require("./ipinfo");
+import axios from "axios";
+import Ipinfo from "./Ipinfo";
 
-class Client {
+export class Client {
   constructor(apiKey) {
     if (!apiKey) throw new Error("api key is required");
 
@@ -12,15 +12,22 @@ class Client {
         "Content-Type": "application/json"
       }
     });
-  }
 
-  /**
-   *  fetch user info using the clear ip client
-   * @param {string} ip ip used to fetch from
-   */
-  getIpinfo(ip) {
-    return GetIpInfoFun(ip, this.apiKey, this.httpClient);
+    this.httpClient.interceptors.request.use(
+      config => ({
+        ...config,
+        params: {
+          ...config.params,
+          ...(!!this.apiKey && {
+            apikey: this.apiKey
+          })
+        }
+      }),
+      error => {
+        throw new Error(error);
+      }
+    );
+
+    this.Ipinfo = new Ipinfo(this.httpClient);
   }
 }
-
-module.exports = Client;

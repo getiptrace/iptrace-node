@@ -13,12 +13,12 @@ yarn add clearip
 Get ip info:
 
 ```javascript
-const Client = require("clearip");
+const Clearip = require("./package/dist/index");
 
 const main = async () => {
-  const clearIpClient = new Client("api key here");
+  const clearIpClient = new Clearip.Client("api key here");
 
-  const response = await clearIpClient.getIpinfo("ip here");
+  const response = await clearIpClient.Ipinfo.getIpInfo("ip here");
   console.log(response);
 };
 ```
