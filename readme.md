@@ -1,11 +1,11 @@
-# clear ip node library
+# IPTrace node library
 
-client library for clear ip
+client library for IPTrace
 
 ## Installation
 
 ```bash
-yarn add iptrace.io
+yarn add getiptrace
 ```
 
 ## usage

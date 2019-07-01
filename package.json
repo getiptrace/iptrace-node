@@ -1,5 +1,5 @@
 {
-  "name": "iptrace.io",
+  "name": "getiptrace",
   "version": "1.0.0",
   "description": "iptrace.io library: Locate your users, enrich their experiences, prevent fraud, ensure compliance, and so much more.",
   "main": "dist/index.js",

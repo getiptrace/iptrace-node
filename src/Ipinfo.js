@@ -6,7 +6,7 @@ export default class IPinfo {
   }
 
   /**
-   * get ip information from clear ip service
+   * get ip information from IPTrace service
    *
    * @param {string} ip
    * @param {string} apikey
