@@ -7,7 +7,7 @@ export class Client {
 
     this.apiKey = apiKey;
     this.httpClient = axios.create({
-      baseURL: "https://api.clearip.io",
+      baseURL: "https://api.iptrace.io",
       headers: {
         "Content-Type": "application/json"
       }

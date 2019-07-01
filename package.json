@@ -1,9 +1,9 @@
 {
-  "name": "clearip",
+  "name": "iptrace",
   "version": "1.0.0",
-  "description": "Clearip.io library: Locate your users, enrich their experiences, prevent fraud, ensure compliance, and so much more.",
+  "description": "iptrace.io library: Locate your users, enrich their experiences, prevent fraud, ensure compliance, and so much more.",
   "main": "dist/index.js",
-  "homepage": "https://clearip.io",
+  "homepage": "https://iptrace.io",
   "scripts": {
     "start": "babel-node main.js",
     "prebuild": "rimraf dist",

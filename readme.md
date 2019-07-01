@@ -5,7 +5,7 @@ client library for clear ip
 ## Installation
 
 ```bash
-yarn add clearip
+yarn add iptrace
 ```
 
 ## usage
@@ -13,12 +13,12 @@ yarn add clearip
 Get ip info:
 
 ```javascript
-const Clearip = require("./package/dist/index");
+const iptrace = require("./package/dist/index");
 
 const main = async () => {
-  const clearIpClient = new Clearip.Client("api key here");
+  const iptraceClient = new iptrace.Client("api key here");
 
-  const response = await clearIpClient.Ipinfo.getIpInfo("ip here");
+  const response = await iptraceClient.Ipinfo.getIpInfo("ip here");
   console.log(response);
 };
 ```
