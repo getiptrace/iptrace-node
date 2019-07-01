@@ -1,6 +1,6 @@
-# iptarce node library
+# iptrace node library
 
-client library for iptarce
+client library for iptrace
 
 ## Installation
 
