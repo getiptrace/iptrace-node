@@ -5,7 +5,7 @@ client library for IPTrace
 ## Installation
 
 ```bash
-yarn add getiptrace
+yarn add iptrace.io
 ```
 
 ## usage
