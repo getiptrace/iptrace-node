@@ -5,7 +5,7 @@ client library for clear ip
 ## Installation
 
 ```bash
-yarn add iptrace
+yarn add iptrace.io
 ```
 
 ## usage

@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/abdullahdiaa/.nvm/versions/node/v4.9.1/bin/node',
+1 verbose cli   '/Users/abdullahdiaa/.nvm/versions/node/v4.9.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.15.11
+3 info using node@v4.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/abdullahdiaa/IPTrace-node',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/abdullahdiaa/.npm/iptrace/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/abdullahdiaa/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/abdullahdiaa/.npm/iptrace/1.0.0/package.tgz',
+10 verbose tar pack   '/Users/abdullahdiaa/IPTrace-node' ]
+11 verbose tarball /Users/abdullahdiaa/.npm/iptrace/1.0.0/package.tgz
+12 verbose folder /Users/abdullahdiaa/IPTrace-node
+13 info prepublish iptrace@1.0.0
+14 verbose unsafe-perm in lifecycle true
+15 info iptrace@1.0.0 Failed to exec prepublish script
+16 error addLocalDirectory Could not pack /Users/abdullahdiaa/IPTrace-node to /Users/abdullahdiaa/.npm/iptrace/1.0.0/package.tgz
+17 error addLocal Could not install /Users/abdullahdiaa/IPTrace-node
+18 verbose stack Error: iptrace@1.0.0 prepublish: `npm run lint && npm run test && npm run build`
+18 verbose stack Exit status 1
+18 verbose stack     at EventEmitter.<anonymous> (/Users/abdullahdiaa/.nvm/versions/node/v4.9.1/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+18 verbose stack     at emitTwo (events.js:87:13)
+18 verbose stack     at EventEmitter.emit (events.js:172:7)
+18 verbose stack     at ChildProcess.<anonymous> (/Users/abdullahdiaa/.nvm/versions/node/v4.9.1/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+18 verbose stack     at emitTwo (events.js:87:13)
+18 verbose stack     at ChildProcess.emit (events.js:172:7)
+18 verbose stack     at maybeClose (internal/child_process.js:862:16)
+18 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:222:5)
+19 verbose pkgid iptrace@1.0.0
+20 verbose cwd /Users/abdullahdiaa/IPTrace-node
+21 error Darwin 18.6.0
+22 error argv "/Users/abdullahdiaa/.nvm/versions/node/v4.9.1/bin/node" "/Users/abdullahdiaa/.nvm/versions/node/v4.9.1/bin/npm" "publish"
+23 error node v4.9.1
+24 error npm  v2.15.11
+25 error code ELIFECYCLE
+26 error iptrace@1.0.0 prepublish: `npm run lint && npm run test && npm run build`
+26 error Exit status 1
+27 error Failed at the iptrace@1.0.0 prepublish script 'npm run lint && npm run test && npm run build'.
+27 error This is most likely a problem with the iptrace package,
+27 error not with npm itself.
+27 error Tell the author that this fails on your system:
+27 error     npm run lint && npm run test && npm run build
+27 error You can get information on how to open an issue for this project with:
+27 error     npm bugs iptrace
+27 error Or if that isn't available, you can get their info via:
+27 error
+27 error     npm owner ls iptrace
+27 error There is likely additional logging output above.
+28 verbose exit [ 1, true ]
