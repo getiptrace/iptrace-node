@@ -1,6 +1,6 @@
-# IPTrace node library
+# iptarce node library
 
-client library for IPTrace
+client library for iptarce
 
 ## Installation
 
